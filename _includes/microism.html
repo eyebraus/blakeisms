@@ -1,5 +1,9 @@
 <div class="microism-content">
-    <a class="post-header-link" href="{{ post.url }}"><h3>{{ post.pretty_title }}</h3></a>
+    {% assign pre_url = "" %}
+    {% unless site.url %}
+        {% assign pre_url = '/blakeisms' %}
+    {% endunless %}
+    <a class="post-header-link" href="{{ pre_url }}/{{ post.title }}"><h3>{{ post.pretty_title }}</h3></a>
     <div class="row">
         <div class="eleven columns">
             <div class="eight columns alpha">{{ post.text }}</div>
