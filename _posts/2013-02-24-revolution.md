@@ -1,6 +1,8 @@
 ---
 layout: ism
-text: >
+title: revolution
+pretty_title: Revolution.
+text: |
     Soon the cat revolution will begin.
-date: February 24th, 2013
+pretty_date: February 24th, 2013
 ---

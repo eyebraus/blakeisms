@@ -1,5 +1,51 @@
 ---
 layout: default
-title: Blakeisms
+title: index
+pretty_title: Blakeisms
 overview: true
+author:
+    name: Sean Brennan
+    github: eyebraus
 ---
+
+<div class="index-frame container">
+    <div class="four columns alpha index-bio-sidebar">
+        {% include sidebar.html %}
+    </div>
+    <div class="twelve columns omega index-posts">
+        <div class="row">
+            {% for post in paginator.posts %}
+                {% if forloop.first == false %}
+                    <hr>
+                {% endif %}
+                {% include microism.html %}
+            {% endfor %}
+        </div>
+        <div class="row">
+            {% if paginator.previous_page and paginator.next_page %}
+                <div class="six columns alpha nav-column">
+                    {% if paginator.previous_page == 1 %}
+                        <a class="button nav-link-left" href="/">Again again!</a>
+                    {% else %}
+                        <a class="button nav-link-left" href="/page{{ paginator.previous_page }}">Again again!</a>
+                    {% endif %}
+                </div>
+                <div class="six columns omega nav-column">
+                    <a class="button nav-link-right" href="/page{{ paginator.next_page }}">More more!</a>
+                </div>
+            {% elsif paginator.previous_page %}
+                <div class="twelve columns nav-column">
+                    {% if paginator.previous_page == 1 %}
+                        <a class="button nav-link-left" href="/">Again again!</a>
+                    {% else %}
+                        <a class="button nav-link-left" href="/page{{ paginator.previous_page }}">Again again!</a>
+                    {% endif %}
+                </div>
+            {% elsif paginator.next_page %}
+                <div class="twelve columns nav-column">
+                    <a class="button nav-link-right" href="/page{{ paginator.next_page }}">More more!</a>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>

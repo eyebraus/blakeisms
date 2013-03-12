@@ -1,0 +1,18 @@
+
+{% include top.html %}
+    <body>
+        {% include header.html %}
+        <div class="index-frame container">
+            <div class="four columns alpha index-bio-sidebar">
+                {% include sidebar.html %}
+            </div>
+            <div class="twelve columns omega index-posts">
+                <div class="row">
+                    {% assign post = page %}
+                    {% include microism.html %}
+                </div>
+            </div>
+        </div>
+        {% include footer.html %}
+    </body>
+</html>

@@ -1,6 +1,8 @@
 ---
 layout: ism
-text: >
+title: tentickles
+pretty_title: Tentickles.
+text: |
     GOTY Tentickles. Soon. Soooon.
-date: February 11th, 2013
+pretty_date: February 11th, 2013
 ---

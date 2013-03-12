@@ -1,3 +1,4 @@
 
+permalink: /:title
 exclude: ['README.md']
-paginate: 20
+paginate: 10
