@@ -25,25 +25,25 @@ author:
             {% if paginator.previous_page and paginator.next_page %}
                 <div class="six columns alpha nav-column">
                     {% if paginator.previous_page == 1 %}
-                        <a class="button nav-link-left" href="{{ site.baseurl }}/">Again again!</a>
+                        <a class="button nav-link-left" href="{{ site.url }}/">Again again!</a>
                     {% else %}
-                        <a class="button nav-link-left" href="{{ site.baseurl }}/page{{ paginator.previous_page }}">Again again!</a>
+                        <a class="button nav-link-left" href="{{ site.url }}/page{{ paginator.previous_page }}">Again again!</a>
                     {% endif %}
                 </div>
                 <div class="six columns omega nav-column">
-                    <a class="button nav-link-right" href="{{ site.baseurl }}/page{{ paginator.next_page }}">More more!</a>
+                    <a class="button nav-link-right" href="{{ site.url }}/page{{ paginator.next_page }}">More more!</a>
                 </div>
             {% elsif paginator.previous_page %}
                 <div class="twelve columns nav-column">
                     {% if paginator.previous_page == 1 %}
-                        <a class="button nav-link-left" href="{{ site.baseurl }}/">Again again!</a>
+                        <a class="button nav-link-left" href="{{ site.url }}/">Again again!</a>
                     {% else %}
-                        <a class="button nav-link-left" href="{{ site.baseurl }}/page{{ paginator.previous_page }}">Again again!</a>
+                        <a class="button nav-link-left" href="{{ site.url }}/page{{ paginator.previous_page }}">Again again!</a>
                     {% endif %}
                 </div>
             {% elsif paginator.next_page %}
                 <div class="twelve columns nav-column">
-                    <a class="button nav-link-right" href="{{ site.baseurl }}/page{{ paginator.next_page }}">More more!</a>
+                    <a class="button nav-link-right" href="{{ site.url }}/page{{ paginator.next_page }}">More more!</a>
                 </div>
             {% endif %}
         </div>
