@@ -2,8 +2,12 @@
     <img class="img-bio-sidebar three columns" src="http://eyebraus.github.com/blakeisms/assets/img/supreme_commander.jpg" />
 </div>
 <div class="row">
+    {% assign pre_url = "" %}
+    {% unless site.url %}
+        {% assign pre_url = '/blakeisms' %}
+    {% endunless %}
     <ul>
-        <li><a href="{{ the_url }}/">Home</a></li>
-        <li><a href="{{ the_url }}/about.html">About</a></li>
+        <li><a href="{{ pre_url }}/">Home</a></li>
+        <li><a href="{{ pre_url }}/about.html">About</a></li>
     </ul>
 </div>

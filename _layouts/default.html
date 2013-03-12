@@ -1,4 +1,12 @@
 
+<!-- ghetto as hell but whatever -->
+{% assign the_url = "" + site.url %}
+{% if the_url == "" %}
+    {% assign the_url = 'eyebraus.github.com/blakeisms' %}
+{% endif %}
+<!-- real site url: {{ site.url }} -->
+<!-- site url: {{ the_url }} -->
+
 {% include top.html %}
     <body>
         {% include header.html %}
