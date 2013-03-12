@@ -1,0 +1,17 @@
+
+a.nav-link-left { float: left; }
+a.nav-link-right { float: right; }
+
+div.about-text-row { font-family: Lato; text-align: center; }
+div.about-text-row h3 h4 { font-family: Lato; }
+div.about-text-row h4 { font-style: italic; }
+div.header-title { text-align: right; }
+div.header-title h1 { margin: 14px 0; }
+div.footer-column { text-align: center; }
+div.date-footer { text-align: right; font-size: 14px; color: rgb(165, 165, 165); font-style: italic; }
+div.index-bio-sidebar { border-right: 2px solid #ebebeb; }
+
+/* footer { bottom: 0px; width: 100%; position: fixed; } */
+
+hr.large { height: 8px; margin: 16px 0px; background: #ebebeb; }
+hr.medium { height: 6px; margin: 8px 0px; background: #ebebeb; }
